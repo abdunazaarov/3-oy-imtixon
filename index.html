@@ -10,11 +10,11 @@
 </head>
 
 <body class="">
-    <div class="container mx-auto pl-[16px] pr-[16px]">
+    <div class="container mx-auto pl-[8px] pr-[8px]">
 
-        <header class="flex justify-between items-center p-4 sm:p-6">
+        <header class="flex justify-between items-center p-2 sm:p-6">
             <div class="flex items-center space-x-2 sm:space-x-4">
-                <img src="./assets/logo.svg" alt="" class="w-8 h-8 sm:w-10 sm:h-10">
+                <img src="./assets/logo.svg" alt="Logo" class="w-8 h-8 sm:w-10 sm:h-10">
                 <span class="text-xl sm:text-2xl font-bold text-blue-900">fleet</span>
                 <select class="bg-white border border-gray-300 text-gray-700 py-1 px-2 sm:py-2 sm:px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
                     <option>USA</option>
@@ -23,45 +23,46 @@
                     <option>Germany</option>
                 </select>
             </div>
-
+        
             <div class="flex items-center space-x-4 sm:space-x-6">
                 <nav>
-                    <ul class="flex space-x-2 sm:space-x-6 nav-links max-[1025px]:hidden">
+                    <ul class="flex space-x-2 sm:space-x-6 nav-links hidden lg:flex">
                         <li><a href="#" class="text-gray-700 text-sm sm:text-base">Travelers</a></li>
                         <li><a href="#" class="text-gray-700 text-sm sm:text-base">Support</a></li>
                         <li><a href="#" class="text-gray-700 text-sm sm:text-base">Language</a></li>
                         <li><a href="#" class="text-gray-700 text-sm sm:text-base">List your property</a></li>
                     </ul>
                 </nav>
-                <img src="./assets/logo.svg" alt="" class="w-6 h-6 sm:w-8 sm:h-8 rounded-full">
+                <img src="./assets/avatar.png" alt="" class="w-6 h-6 sm:w-8 sm:h-8 rounded-full">
             </div>
         </header>
-
+        
         <section class="relative bg-cover bg-center h-64 sm:h-screen" style="background-image: url('./assets/hero.png');">
-            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="absolute inset-0"></div> 
         </section>
-
-        <section class="relative z-20 h-28 sm:h-32 md:h-40 -mt-16 sm:-mt-24">
-            <div class="max-w-4xl mx-auto bg-white p-4 sm:p-6 rounded-lg shadow-lg">
+        
+        <section class="relative z-20 h-28 sm:h-32 md:h-40 -mt-16 sm:-mt-24 max-w-4xl mx-auto mb-16">
+            <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg">
                 <div class="flex flex-col md:flex-row space-y-2 sm:space-y-4 md:space-y-0 md:space-x-4">
                     <div class="flex-1">
                         <label for="pickup-location" class="block text-gray-600 text-sm sm:text-base">Pickup location</label>
-                        <input type="text" id="pickup-location" placeholder="Where are you?" class="mt-1 p-1 sm:p-2 border rounded w-full focus:outline-none">
+                        <input type="text" id="pickup-location" placeholder="Where are you?" class="mt-1 p-1 sm:p-2 border rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-600">
                     </div>
                     <div class="flex-1">
                         <label for="pickup-date" class="block text-gray-600 text-sm sm:text-base">Pickup date</label>
-                        <input type="date" id="pickup-date" class="mt-1 p-1 sm:p-2 border rounded w-full focus:outline-none">
+                        <input type="date" id="pickup-date" class="mt-1 p-1 sm:p-2 border rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-600">
                     </div>
                     <div class="flex-1">
                         <label for="return-date" class="block text-gray-600 text-sm sm:text-base">Return date</label>
-                        <input type="date" id="return-date" class="mt-1 p-1 sm:p-2 border rounded w-full focus:outline-none">
+                        <input type="date" id="return-date" class="mt-1 p-1 sm:p-2 border rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-600">
                     </div>
-                    <div class="flex items-end">
+                    <div class="flex items-end justify-center md:justify-start">
                         <button class="bg-blue-700 text-white px-4 py-2 sm:px-8 sm:py-3 rounded-full w-full md:w-auto">Search</button>
                     </div>
                 </div>
             </div>
         </section>
+        
 
         <section class="mt-8 sm:mt-12 overflow-x-auto max-[768px]:mt-[200px]">
             <h2 class="text-xl sm:text-2xl font-bold text-center mb-4 sm:mb-6">Popular destinations</h2>
@@ -120,9 +121,9 @@
 
         <section class="mt-12 sm:mt-16 mb-6">
             <h2 class="text-[25px] sm:text-2xl font-bold text-center mb-4 sm:mb-6">Explore nearby</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[32px]">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-[32px]">
                 <div class="bg-white rounded-lg overflow-hidden h-[400px] object-cover">
-                    <img src="./assets/london.png" alt="" class="w-full h-56 ">
+                    <img src="./assets/london.png" alt="London" class="w-full h-56 object-cover">
                     <div class="p-4 mt-8">
                         <h3 class="font-bold text-[22px]">London</h3>
                         <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
@@ -130,7 +131,7 @@
                     </div>
                 </div>
                 <div class="bg-white rounded-lg overflow-hidden h-[400px] object-cover">
-                    <img src="./assets/paris.png" alt="" class="w-full h-56 ">
+                    <img src="./assets/paris.png" alt="Paris" class="w-full h-56 object-cover">
                     <div class="p-4 mt-8">
                         <h3 class="font-bold text-[22px]">Paris</h3>
                         <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
@@ -138,7 +139,7 @@
                     </div>
                 </div>
                 <div class="bg-white rounded-lg overflow-hidden h-[400px] object-cover">
-                    <img src="./assets/ams.png" alt="" class="w-full h-56">
+                    <img src="./assets/ams.png" alt="Amsterdam" class="w-full h-56 object-cover">
                     <div class="p-4 mt-8">
                         <h3 class="font-bold text-[22px]">Amsterdam</h3>
                         <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
@@ -146,7 +147,7 @@
                     </div>
                 </div>
                 <div class="bg-white rounded-lg overflow-hidden h-[400px] object-cover">
-                    <img src="./assets/london.png" alt="" class="w-full h-56 ">
+                    <img src="./assets/london.png" alt="London" class="w-full h-56 object-cover">
                     <div class="p-4 mt-8">
                         <h3 class="font-bold text-[22px]">London</h3>
                         <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
@@ -154,7 +155,7 @@
                     </div>
                 </div>
                 <div class="bg-white rounded-lg overflow-hidden h-[400px] object-cover">
-                    <img src="./assets/paris.png" alt="" class="w-full h-56">
+                    <img src="./assets/paris.png" alt="Paris" class="w-full h-56 object-cover">
                     <div class="p-4 mt-8">
                         <h3 class="font-bold text-[22px]">Paris</h3>
                         <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
@@ -162,7 +163,7 @@
                     </div>
                 </div>
                 <div class="bg-white rounded-lg overflow-hidden h-[400px] object-cover">
-                    <img src="./assets/ams.png" alt="" class="w-full h-56">
+                    <img src="./assets/ams.png" alt="Amsterdam" class="w-full h-56 object-cover">
                     <div class="p-4 mt-8">
                         <h3 class="font-bold text-[22px]">Amsterdam</h3>
                         <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
@@ -170,7 +171,7 @@
                     </div>
                 </div>
                 <div class="bg-white rounded-lg overflow-hidden h-[400px] object-cover">
-                    <img src="./assets/london.png" alt="" class="w-full h-56">
+                    <img src="./assets/london.png" alt="London" class="w-full h-56 object-cover">
                     <div class="p-4 mt-8">
                         <h3 class="font-bold text-[22px]">London</h3>
                         <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
@@ -178,7 +179,7 @@
                     </div>
                 </div>
                 <div class="bg-white rounded-lg overflow-hidden h-[400px] object-cover">
-                    <img src="./assets/paris.png" alt="" class="w-full h-56">
+                    <img src="./assets/paris.png" alt="Paris" class="w-full h-56 object-cover">
                     <div class="p-4 mt-8">
                         <h3 class="font-bold text-[22px]">Paris</h3>
                         <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
@@ -186,7 +187,7 @@
                     </div>
                 </div>
                 <div class="bg-white rounded-lg overflow-hidden h-[400px] object-cover">
-                    <img src="./assets/ams.png" alt="" class="w-full h-56">
+                    <img src="./assets/ams.png" alt="Amsterdam" class="w-full h-56 object-cover">
                     <div class="p-4 mt-8">
                         <h3 class="font-bold text-[22px]">Amsterdam</h3>
                         <p class="text-gray-600 text-sm">Car rentals in 86 pickup locations</p>
@@ -194,7 +195,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>        
 
         <section class="text-center mb-16 mt-48 max-w-xs mx-auto">
             <h1 class="text-lg font-semibold uppercase tracking-wide text-gray-500">A Creative Agency That Lead And Inspire</h1>
